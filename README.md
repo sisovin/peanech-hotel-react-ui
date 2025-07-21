@@ -1,73 +1,146 @@
-# Welcome to your Lovable project
+# Peanech-Hotel-Hub
 
-## Project info
+## 🚀 Roadmap to React JSX: Peanech-HMS Design
 
-**URL**: https://lovable.dev/projects/36c9a50e-a801-4fcf-93b8-da7ee2024fb9
+**Goal**:  
+Build a futuristic, responsive **Peanech-HMS** hotel website and management system using React JSX for the frontend, while retaining robust backend functionality in native PHP (CLI) + PDO MySQL. The modern UI is powered by **Tailwind CSS**, with support for dynamic theming.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🧱 Tech Stack
 
-**Use Lovable**
+| Layer            | Tools Used                                           |
+|------------------|------------------------------------------------------|
+| Language         | PHP 8.3.12 (CLI scripts), JavaScript (modular JSX)  |
+| Frontend         | React JSX, Tailwind CSS (custom themes via OKLCH)   |
+| Backend          | PHP (MVC-style), PDO MySQL                          |
+| UI Features      | AJAX, jQuery (legacy bridging), HTML5               |
+| Server Options   | XAMPP / IIS (PHP CGI compatible)                    |
+| Browsers Targeted| Chrome, Firefox, Edge, Opera                        |
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/36c9a50e-a801-4fcf-93b8-da7ee2024fb9) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🎨 Tailwind CSS Theme Architecture
 
-**Use your preferred IDE**
+- **Customizable color standards**: `default`, `red`, `rose`, `orange`, `green`, `blue`, `yellow`, `violet`
+- **Theme variables** follow OKLCH format and support dark mode with precise chromatic control.
+- Easily extend and switch themes for a unique user experience.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🛠️ Modules Breakdown
 
-Follow these steps:
+### 🔐 Admin Panel
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- Admin Authentication
+- Admin Profile + Password Management
+- Room Setup & Availability Controls
+- Booking Management (Create/Edit/Delete)
+- User Registration & Profile Oversight
+- Complaint Handling Workflow
+- Feedback Moderation & Display
+- Password Recovery System
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 🧑‍💼 User Panel
 
-# Step 3: Install the necessary dependencies.
-npm i
+- User Registration & Login
+- Password Reset Flow
+- Personalized Dashboard
+- Profile Management
+- Room Booking + History
+- Complaint Registration & Tracking
+- Feedback Submission Interface
+- Account Activity Logs
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+---
+
+## 📋 Development Milestones
+
+1. **Phase 1 – Setup & Boilerplate**
+    - CLI-based PHP backend initialization
+    - React JSX structure bootstrapping
+    - Tailwind base theme injection with dark/light variants
+
+2. **Phase 2 – Core Features**
+    - Admin module UI with protected routes
+    - Room CRUD & user profile management
+    - Booking engine integration with PHP-PDO transactions
+
+3. **Phase 3 – User Experience**
+    - Registration/login forms with AJAX feedback
+    - Complaint and feedback system via React forms
+    - Tailored dashboards for Admin/User roles
+
+4. **Phase 4 – Enhancements**
+    - Theme customization panel with OKLCH sliders
+    - Activity logs, printable views
+    - Responsive layout refinements
+
+---
+
+## 📦 Installation & Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/sisovin/peanech-hotel-react-ui.git
+   ```
+
+2. **Install frontend dependencies:**
+   ```bash
+   cd peanech-hotel-react-ui
+   npm install
+   ```
+
+3. **Setup backend:**
+   - Ensure PHP 8.3.12+ is installed.
+   - Configure database credentials in `/backend/config.php`.
+   - Import the provided SQL schema to your MySQL server.
+
+4. **Run the development servers:**
+   - **Frontend:**  
+     ```bash
+     npm start
+     ```
+   - **Backend:**  
+     Use CLI or configure with XAMPP/IIS as per documentation.
+
+---
+
+## 🌐 Project Structure
+
+```
+peanech-hotel-react-ui/
+├── backend/         # PHP scripts, MVC controllers
+├── src/             # React JSX components, Tailwind config
+├── public/          # Static assets
+├── tailwind.config.js
+├── package.json
+└── README.md
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## ✨ Contributing
 
-**Use GitHub Codespaces**
+1. Fork the repo
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Open a Pull Request!
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 📄 License
 
-This project is built with:
+This project is licensed under the MIT License.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## 💬 Contact & Support
 
-Simply open [Lovable](https://lovable.dev/projects/36c9a50e-a801-4fcf-93b8-da7ee2024fb9) and click on Share -> Publish.
+For questions, feedback, or reporting issues:  
+Open an [issue](https://github.com/sisovin/peanech-hotel-react-ui/issues) or contact the maintainer via GitHub.
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+**Enjoy building the next-gen hotel management system with Peanech-HMS!**
